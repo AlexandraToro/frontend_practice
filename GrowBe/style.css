@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(font2/Gilroy-Bold.woff2);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(font2/Gilroy-Medium.woff2);
+}
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(font2/Gilroy-Regular.woff2);
+}
+
+@font-face {
+  font-family: Gilroy-Semibold;
+  src: url(font2/Gilroy-Semibold.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 40px;
+}
+
+.header__wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  width: 533px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Gilroy-Semibold;
+  margin-bottom: 12px;
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav__link {
+  color: #000;
+}
+
+.nav__link__choice {
+  color: #f25822;
+}
+
+.select {
+  background: none;
+  border: none;
+  font-family: Gilroy-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.top__content {
+  padding-top: 84px;
+  padding-bottom: 162px;
+}
+
+.content__wraper {
+  display: flex;
+  gap: 41px;
+}
+
+.title {
+  width: 522px;
+  margin-bottom: 17px;
+  font-family: "Gilroy-Bold";
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.text {
+  width: 466px;
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  line-height: 23px;
+  color: #888888;
+}
+
+.top__buttons {
+  margin-top: 37px;
+  display: flex;
+  gap: 72px;
+  align-items: center;
+}
+
+.button_start {
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 18px;
+  width: 140px;
+  height: 50px;
+  color: #ffffff;
+  background: #f25822;
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.button_video {
+  font-family: "Gilroy-Bold";
+  font-size: 15px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: #aaaaaa;
+  border: none;
+  width: 90px;
+  height: 19px;
+}
+
+.logos__wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_logos {
+  padding-top: 97px;
+  padding-bottom: 96px;
+}
