@@ -12,7 +12,6 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 .center {
@@ -48,27 +47,31 @@ img {
   justify-content: flex-end;
 }
 
+.counter__form {
+  display: none;
+}
+
 .banner {
   background: #f1e4e6;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .banner__left {
-  width: 50%;
   display: flex;
   justify-content: end;
 }
 
 .banner__right {
-  width: 50%;
   display: flex;
   align-items: center;
   padding-top: 289px;
   padding-left: 63px;
   padding-bottom: 381px;
+  padding-right: 331px;
 }
 
-.sections {
+.category {
   margin-top: 65px;
   margin-bottom: 96px;
   display: grid;
@@ -80,43 +83,56 @@ img {
   grid-column: span 3;
 }
 
-.section {
-  position: relative;
+.category-kids {
+  background-image: url(img/kids.svg);
+  background-size: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+}
+.category-women {
+  background-image: url(img/women.svg);
+  background-size: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+}
+.category-men {
+  background-image: url(img/men.svg);
+  background-size: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+}
+.category-accesories {
+  background-image: url(img/accesories.svg);
+  background-size: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
 }
 
-.section__text {
-  position: absolute;
-  top: 105px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+.category-bg {
+  background: rgba(33, 22, 22, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.category-text {
+  font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
 
-.first {
-  left: 103px;
-}
-.second {
-  left: 125px;
-}
-.third {
-  left: 123px;
-}
-.corall {
+.category-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
   color: #f16d7f;
-  font-weight: 400;
-  font-size: 20px;
 }
 
-.long_text {
-  top: 65px;
-  bottom: 65px;
-  left: 490px;
-}
-
-.heading {
+.item__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,4 +210,104 @@ img {
   line-height: 19px;
   color: #f26376;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 385px);
+    padding-right: calc(50% - 385px);
+  }
+
+  .center_banner {
+    padding-left: calc(50% - 385px);
+    padding-right: calc(50% - 385px);
+  }
+
+  .left__nav {
+    padding-bottom: 18px;
+    padding-left: 32px;
+  }
+
+  .right__nav {
+    padding-right: 41px;
+    gap: 0px;
+  }
+
+  .right__icon_profile {
+    margin-left: 25px;
+    margin-right: 42px;
+  }
+
+  .right__nav {
+    position: relative;
+  }
+
+  .counter__form {
+    display: unset;
+    position: absolute;
+    top: -7px;
+    right: 33px;
+    text-align: center;
+    width: 19px;
+    line-height: 19px;
+    border-radius: 100%;
+    background-color: #f16d7f;
+  }
+
+  .counter {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  .banner {
+    height: 368px;
+  }
+
+  .banner__right {
+    padding-left: 38px;
+    padding-top: 138px;
+    padding-bottom: 138px;
+    padding-right: 33px;
+  }
+
+  .banner__img {
+    width: 386px;
+  }
+
+  .brand__img {
+    width: 311px;
+  }
+
+  .category {
+    margin: 65px 16.5px 110px 16.5px;
+    display: grid;
+    grid-template-columns: repeat(3, 232px);
+    gap: 20px;
+  }
+
+  .category-kids, .category-women, .category-men {
+    height: 168px;
+  }
+
+  .category-accesories {
+    height: 116px;
+  }
+
+  .item__heading {
+    gap: 3px;
+  }
+
+  .item__text {
+    margin-bottom: 72px;
+  }
+
+  .card__product {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
